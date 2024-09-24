@@ -1,4 +1,4 @@
-# dom-mp-dice
+# Dice Roller
 
 Simple Application of DOM Manipulation and logic using Javascript, HTML, and CSS.
 
