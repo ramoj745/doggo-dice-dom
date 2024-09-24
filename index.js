@@ -11,16 +11,16 @@ function diceRoll() {
     document.querySelector(".player1 img").setAttribute("src", `./images/dice${getImg1}.png`);
     document.querySelector(".player2 img").setAttribute("src", `./images/dice${getImg2}.png`);
 
-    document.querySelector(".dice img").classList.remove("spin")
-    document.querySelector(".dice .player2 img").classList.remove("spin")
+    document.querySelector(".dice img").classList.remove("spin");
+    document.querySelector(".dice .player2 img").classList.remove("spin");
 
     document.querySelector(".dice img").offsetWidth;
-    document.querySelector(".dice .player2 img").offsetWidth
+    document.querySelector(".dice .player2 img").offsetWidth;
 
-    document.querySelector(".dice img").classList.add("spin")
-    document.querySelector(".dice .player2 img").classList.add("spin")
+    document.querySelector(".dice img").classList.add("spin");
+    document.querySelector(".dice .player2 img").classList.add("spin");
 
-    return [getImg1,getImg2]
+    return [getImg1,getImg2];
 }
 
 function getWinner(dice1,dice2) {
@@ -30,13 +30,13 @@ function getWinner(dice1,dice2) {
     } else if (dice1 < dice2) {
         return false;
     } else {
-        return "Tie"
+        return "Tie";
     }
 }
 
 function wrapFunction() {
 
-    var [roll1,roll2] = diceRoll()
+    var [roll1,roll2] = diceRoll();
 
     var win = getWinner(roll1,roll2);
 
