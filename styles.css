@@ -18,8 +18,12 @@ body {
     font-family: Montserrat;
 }
 .dice {
-    display: inline-block;
+    display: flex;
     font-size: 2rem;
+    align-items: center;
+}
+h2 {
+    padding-top: 100px;
 }
 .dice img{
     margin-left: 50px;
